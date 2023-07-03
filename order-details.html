@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo/logo icon.png" />
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- CSS files -->
+
+    <!-- Font-Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font-Awesome CDN -->
+
+    <!-- Flat Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <!-- Flat Icon CDN -->
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CDN -->
+
+    <!-- JQuery CDN -->
+    <script src="./js/vendor/jquery-3.6.3.min.js"></script>
+    <!-- JQuery CDN -->
+
+    <title>SolPlant || Order Details</title>
+  </head>
+
+  <body>
+    <!-- Navbar section Start -->
+    <nav>
+      <div class="top_nav">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <ul>
+              <li>
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>00440012345678</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:example@example.com">example@example.com</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <a href="https://facebook.com/"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="https://twitter.com/"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="https://instagram.com/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav_wrapper">
+        <div class="navbar">
+          <div class="container">
+            <div
+              class="d-flex w-100 align-items-center justify-content-between"
+            >
+              <div class="logo">
+                <a href="index.html">
+                  <img class="img-fluid" src="./images/logo.png" alt="" />
+                </a>
+              </div>
+
+              <div class="menus">
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      Home <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown">
+                      <a href="index.html">
+                        <li>Home 1</li>
+                      </a>
+                      <a href="index2.html">
+                        <li>Home 2</li>
+                      </a>
+                    </ul>
+                  </li>
+                  <li><a href="about-us.html"> About Us </a></li>
+                  <li>
+                    <a href="#">
+                      Page <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="dropdown">
+                      <a href="cart.html">
+                        <li>Cart</li>
+                      </a>
+                      <a href="changePassword.html">
+                        <li>Change Password</li>
+                      </a>
+                      <a href="login.html">
+                        <li>Login</li>
+                      </a>
+                      <a href="order-details.html">
+                        <li>Order Details</li>
+                      </a>
+                      <a href="order-summery.html">
+                        <li>Order Summery</li>
+                      </a>
+                      <a href="order-tacking.html">
+                        <li>Order Tracking</li>
+                      </a>
+                      <a href="payment.html">
+                        <li>Payment</li>
+                      </a>
+                      <a href="profile.html">
+                        <li>Profile</li>
+                      </a>
+                      <a href="signUp.html">
+                        <li>Sign Up</li>
+                      </a>
+                    </ul>
+                  </li>
+                  <li><a href="product.html"> Product </a></li>
+                  <li><a href="blog.html"> Blog </a></li>
+                  <li><a href="contact.html"> Contact Us </a></li>
+                </ul>
+
+                <ul class="options">
+                  <li onclick="openSearchBar()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </li>
+                  <a href="cart.html">
+                    <li>
+                      <i class="fa-solid fa-cart-shopping"></i>
+
+                      <div class="qty">3</div>
+                    </li>
+                  </a>
+
+                  <a href="profile.html">
+                    <li><i class="fa-solid fa-user"></i></li>
+                  </a>
+
+                  <li>
+                    <div class="hamburger" id="hamburger-1">
+                      <span class="line"></span>
+                      <span class="line"></span>
+                      <span class="line"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav_overlay"></div>
+
+      <div class="mobile_nav">
+        <div id="mobile_nav_wrapper" class="wrapper">
+          <div class="logo">
+            <img class="img-fluid" src="./images/logo2.png" alt="" />
+          </div>
+
+          <div class="accordion_wrapper">
+            <div class="accordion">
+              <div class="heading">
+                <h3 class="heading3">Home</h3>
+              </div>
+              <div class="contents">
+                <a href="index.html">
+                  <h3 class="heading3">Home1</h3>
+                </a>
+                <a href="index2.html">
+                  <h3 class="heading3">Home2</h3>
+                </a>
+              </div>
+              <a href="product.html">
+                <h3 class="heading3">Product</h3>
+              </a>
+              <a href="blog.html">
+                <h3 class="heading3">Blog</h3>
+              </a>
+              <a href="contact.html">
+                <h3 class="heading3">Contact Us</h3>
+              </a>
+
+              <div class="heading">
+                <h3 class="heading3">Pages</h3>
+              </div>
+              <div class="contents">
+                <a href="cart.html">
+                  <h3 class="heading3">Cart</h3>
+                </a>
+                <a href="changePassword.html">
+                  <h3 class="heading3">Change Password</h3>
+                </a>
+                <a href="login.html">
+                  <h3 class="heading3">Login</h3>
+                </a>
+                <a href="order-details.html">
+                  <h3 class="heading3">Order Details</h3>
+                </a>
+                <a href="order-summery.html">
+                  <h3 class="heading3">Order Summery</h3>
+                </a>
+                <a href="order-tacking.html">
+                  <h3 class="heading3">Order Tracking</h3>
+                </a>
+                <a href="payment.html">
+                  <h3 class="heading3">Payment</h3>
+                </a>
+                <a href="profile.html">
+                  <h3 class="heading3">Profile</h3>
+                </a>
+                <a href="signUp.html">
+                  <h3 class="heading3">Sign Up</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="close-button">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar section Start -->
+
+    <div class="order-details">
+      <!-- Header Short Banner Start -->
+      <div class="profile-banner primary7">
+        <h2 class="heading2 text-center">Order Details</h2>
+      </div>
+      <!-- Header Short Banner End -->
+
+      <!-- Section padding -->
+      <div class="square"></div>
+
+      <!-- Profile Order Summery Section Start -->
+      <div class="container">
+        <div class="d-flex justify-content-between mb-20">
+          <h3 class="heading3">Order Details</h3>
+          <a href="order-tacking.html">
+            <button class="button-1">Track Order</button>
+          </a>
+        </div>
+
+        <div class="orders">
+          <div
+            class="d-flex header justify-content-between align-items-center mb-40"
+          >
+            <div>Product Name</div>
+            <div>Price</div>
+            <div>Quantity</div>
+            <div>Total Amount</div>
+            <div>Status</div>
+            <div>Delivery Date</div>
+            <div>Payment Method</div>
+            <div>Action</div>
+          </div>
+
+          <div
+            class="d-flex justify-content-between align-items-center order-row"
+          >
+            <div
+              class="item d-flex flex-md-column align-items-center justify-content-center"
+            >
+              <img src="./images/profile/cart/3.png" alt="" class="img-fluid" />
+              <div>
+                <h4 class="heading6 mb-20">Aliquam Vel</h4>
+              </div>
+            </div>
+
+            <div>
+              <h6 class="item heading6">10$</h6>
+            </div>
+            <div>
+              <h6 class="item heading6">2</h6>
+            </div>
+            <div>
+              <h6 class="item heading6">$20</h6>
+            </div>
+            <div>
+              <h6 class="item heading6">Confirmed</h6>
+            </div>
+            <div>
+              <h6 class="item heading6">20-Jan-2023</h6>
+            </div>
+            <div>
+              <h6 class="item heading6">Online Payment</h6>
+            </div>
+            <div>
+              <h6 class="item heading3">
+                <div class="moreover">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <div class="popup">
+                    <a href="#">
+                      <div class="paragraph">Cancel</div>
+                    </a>
+                    <div class="divider"></div>
+                    <a href="#">
+                      <div class="paragraph">View</div>
+                    </a>
+                  </div>
+                </div>
+              </h6>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center order-row"
+          >
+            <div
+              class="item d-flex flex-md-column align-items-center justify-content-center"
+            >
+              <img src="./images/profile/cart/4.png" alt="" class="img-fluid" />
+              <div>
+                <h4 class="heading6 mb-20">Curabitur a Purus</h4>
+              </div>
+            </div>
+
+            <div>
+              <h6 class="heading6">10$</h6>
+            </div>
+            <div>
+              <h6 class="heading6">2</h6>
+            </div>
+            <div>
+              <h6 class="heading6">$20</h6>
+            </div>
+            <div>
+              <h6 class="heading6">Processing</h6>
+            </div>
+            <div>
+              <h6 class="heading6">20-Jan-2023</h6>
+            </div>
+            <div>
+              <h6 class="heading6">Online Payment</h6>
+            </div>
+            <div>
+              <h6 class="heading3">
+                <div class="moreover">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <div class="popup">
+                    <a href="#">
+                      <div class="paragraph">Cancel</div>
+                    </a>
+                    <div class="divider"></div>
+                    <a href="#">
+                      <div class="paragraph">View</div>
+                    </a>
+                  </div>
+                </div>
+              </h6>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center order-row"
+          >
+            <div
+              class="item d-flex flex-md-column align-items-center justify-content-center"
+            >
+              <img src="./images/profile/cart/2.png" alt="" class="img-fluid" />
+              <div>
+                <h4 class="heading6 mb-20">Convallis Quam Sit</h4>
+              </div>
+            </div>
+
+            <div>
+              <h6 class="heading6">10$</h6>
+            </div>
+            <div>
+              <h6 class="heading6">2</h6>
+            </div>
+            <div>
+              <h6 class="heading6">$20</h6>
+            </div>
+            <div>
+              <h6 class="heading6">Processing</h6>
+            </div>
+            <div>
+              <h6 class="heading6">20-Jan-2023</h6>
+            </div>
+            <div>
+              <h6 class="heading6">Online Payment</h6>
+            </div>
+            <div>
+              <h6 class="heading3">
+                <div class="moreover">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <div class="popup">
+                    <a href="#">
+                      <div class="paragraph">Cancel</div>
+                    </a>
+                    <div class="divider"></div>
+                    <a href="#">
+                      <div class="paragraph">View</div>
+                    </a>
+                  </div>
+                </div>
+              </h6>
+            </div>
+          </div>
+        </div>
+        <a href="#">
+          <button class="button-1 mt-30 mx-auto">View More</button>
+        </a>
+      </div>
+      <!-- Profile Order Summery Section End -->
+
+      <!-- Section padding -->
+      <div class="square"></div>
+    </div>
+
+    <!-- Footer section Start -->
+    <section id="footer">
+      <!-- Section padding -->
+      <div class="square"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-lg-4">
+            <div class="logo mb-30">
+              <img src="./images/footer/logo.png" alt="" class="img-fluid" />
+            </div>
+
+            <div class="paragraph mb-20">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
+              nulla eu dui suscipit ultricies. Mauris vestibulum volutpat nisl
+              vel cursus. Cras finibus nec mauris tincidunt condimentum.
+            </div>
+
+            <div class="social-links">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://linkedin.com/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <h3 class="heading3">Link</h3>
+
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-8 col-lg-3">
+            <h3 class="heading3">Get In Touch</h3>
+            <ul class="addresses">
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-phone-volume"></i> 00440012345678
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-envelope"></i> examlple@example.com
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-map-location-dot"></i> 29 Washington Pl,
+                  New York, NY 10003, USA
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h3 class="heading3">Other Links</h3>
+
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section padding -->
+      <div class="square"></div>
+
+      <div class="divider"></div>
+
+      <div class="container copyright">
+        <div class="d-flex py-3 justify-content-between align-items-center">
+          <div class="paragraph">Copyright & Design by SolPlant-2023</div>
+
+          <div class="d-flex">
+            <div class="card-wrapper">
+              <img src="./images/footer/1.png" class="img-fluid" alt="" />
+            </div>
+            <div class="card-wrapper">
+              <img src="./images/footer/2.png" class="img-fluid" alt="" />
+            </div>
+            <div class="card-wrapper">
+              <img src="./images/footer/3.png" class="img-fluid" alt="" />
+            </div>
+            <div class="card-wrapper">
+              <img src="./images/footer/4.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section End -->
+
+    <!-- Search Bar -->
+    <div class="main-search-bar">
+      <form action="">
+        <input type="text" placeholder="SEARCH" />
+
+        <div onclick="closeSearchBar()" class="close">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+    <!-- Search Bar -->
+
+    <!-- Product short details popup start -->
+    <div id="popup-overlay">
+      <div class="popup d-flex">
+        <div class="img-wrapper">
+          <img src="./images/popup/1.png" alt="" class="img-fluid" />
+        </div>
+        <div onclick="closePopup()" class="close">
+          <i class="fa-sharp fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="content">
+          <h3 class="heading3">Aliquam vel</h3>
+          <div class="price d-flex mb-20">
+            <span class="line-through">$12</span>
+
+            <span>$10</span>
+          </div>
+
+          <div class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed
+            nulla eu dui suscipit ultricies. Mauris vestibulum volutpat nisl vel
+            cursus. Cras finibus nec mauris tincidunt condimentum. Cras vel
+            interdum arcu.
+          </div>
+
+          <div class="rating d-flex">
+            <span><i class="fa-solid fa-star"></i></span>
+            <span><i class="fa-solid fa-star"></i></span>
+            <span><i class="fa-solid fa-star"></i></span>
+            <span><i class="fa-solid fa-star"></i></span>
+            <span><i class="fa-solid fa-star"></i></span>
+          </div>
+
+          <h4 class="heading4 mb-30">Category : Small Plant</h4>
+
+          <div class="d-flex quantity-wrapper align-items-center">
+            <h4 class="heading">Quantity</h4>
+            <div class="d-flex quantity">
+              <span class="quantity-down"
+                ><i class="fa-solid fa-minus"></i
+              ></span>
+              <input
+                type="number"
+                min="1"
+                max="100"
+                step="1"
+                value="1"
+                readonly
+              />
+              <span class="quantity-up"><i class="fa-solid fa-plus"></i></span>
+            </div>
+          </div>
+
+          <a href="cart.html">
+            <button class="button-1 mt-30">Add to cart</button>
+          </a>
+        </div>
+
+        <div onclick="closePopup()" class="overlay-popup-bg"></div>
+      </div>
+    </div>
+    <!-- Product short details popup end -->
+
+    <!-- Cart Sidebar -->
+    <div class="header-cart-wrap" id="headerCartWrap">
+      <div onclick="closeCart()" class="cart-overlay"></div>
+
+      <div class="cart-list">
+        <div class="title">
+          <h3 class="heading3">Shopping Cart</h3>
+          <button onclick="closeCart()" class="cart-close">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </button>
+        </div>
+        <ul>
+          <li>
+            <a href="shop-details.html">
+              <div class="part-img">
+                <img src="images/products/1.png" alt="Image" />
+              </div>
+              <div class="part-txt">
+                <span class="heading5">Diamond wedding ring</span>
+                <span>1 <i class="fa-solid fa-xmark"></i> $5.00</span>
+              </div>
+            </a>
+            <button class="delete-btn">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </li>
+          <li>
+            <a href="shop-details.html">
+              <div class="part-img">
+                <img src="images/products/2.png" alt="Image" />
+              </div>
+              <div class="part-txt">
+                <span class="heading5">Living Summer Chair</span>
+                <span>1 <i class="fa-solid fa-xmark"></i> $5.00</span>
+              </div>
+            </a>
+            <button class="delete-btn">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </li>
+          <li>
+            <a href="shop-details.html">
+              <div class="part-img">
+                <img src="images/products/3.png" alt="Image" />
+              </div>
+              <div class="part-txt">
+                <span class="heading5">Wireless Headphone</span>
+                <span>1 <i class="fa-solid fa-xmark"></i> $5.00</span>
+              </div>
+            </a>
+            <button class="delete-btn">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </li>
+        </ul>
+        <div class="total">
+          <p>Subtotal: <span>$15:00</span></p>
+        </div>
+        <div class="btn-box">
+          <a href="cart.html" class="button-1">Checkout</a>
+        </div>
+      </div>
+    </div>
+    <!-- Cart Sidebar -->
+    <!-- Right Sidebar-Bar Toggler -->
+    <div onclick="openCart()" class="side_cart">
+      <div class="top-1">
+        <div class="top-items-number">
+          <i class="fa-sharp fa-solid fa-bag-shopping"></i>
+          <p class="paragraph-2">3 Items</p>
+        </div>
+        <div class="top-item-dollar">
+          <p class="paragraph-2">$15</p>
+        </div>
+      </div>
+    </div>
+    <!-- Right Sidebar-Bar Toggler -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
